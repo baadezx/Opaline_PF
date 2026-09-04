@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="OpalineAPI/OpalineAPI.csproj" Id="b66ece1d-07b4-4bf0-9da8-aae8e057cd3b" />
+  <Project Path="Opaline_PF/OpalineClient.csproj" />
+</Solution>

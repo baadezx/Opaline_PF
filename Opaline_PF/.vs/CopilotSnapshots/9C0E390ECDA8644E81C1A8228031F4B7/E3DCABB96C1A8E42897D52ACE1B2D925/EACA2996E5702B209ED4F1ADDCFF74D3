@@ -1,0 +1,34 @@
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace OpalineAPI.Models
+{
+    public class Produto
+    {
+        public Guid Id { get; set; }
+
+
+        [Required]
+        [StringLength(100)]
+        public string Nome { get; set; }
+
+
+        [Required]
+        [StringLength(100)]
+        public string Descricao { get; set; }
+
+
+        [Required]
+        [DataType(DataType.Currency)]
+        public decimal Preco { get; set; }
+
+
+        public int? Estoque { get; set; }
+
+
+        [Required]
+        public Guid CategoriaId { get; set; }
+
+
+        public Categoria Categoria { get; set; }
+    }
+}

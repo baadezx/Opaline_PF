@@ -1,0 +1,85 @@
+﻿@* Layout principal do site: define estrutura HTML compartilhada entre as páginas *@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    @* Define codificação de caracteres e configuração para dispositivos móveis *@
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    @* Título da página: usa ViewData["Title"] definido nas páginas individuais *@
+    <title>@ViewData["Title"] - Opaline</title>
+
+    @* Import map vazio (placeholder) para módulos JavaScript se necessário *@
+    <script type="importmap"></script>
+
+    @* Estilos CSS: Bootstrap e arquivos de estilo do projeto *@
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/layout.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/Opaline_PF.styles.css" asp-append-version="true" />
+</head>
+<body>
+    @* Cabeçalho com barra de navegação (Bootstrap) *@
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light border-bottom box-shadow mb-3 nav-foda">
+            <div class="container-fluid">
+                @* Link da marca que leva à ação Index do HomeController *@
+                <a class="navbar-brand text-white fs-2 thp" asp-area="" asp-controller="Home" asp-action="Index">Opaline ✧</a>
+
+                @* Botão para colapsar a navegação em telas pequenas *@
+                <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon text-white"></span>
+                </button>
+
+                @* Itens da barra: links principais e área de login *@
+                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between links-principais">
+                    <ul class="navbar-nav flex-grow-1">
+                        <li class="nav-item">
+                            @* Link para a página inicial *@
+                            <a class="nav-link cw fs-5 thp" asp-area="" asp-controller="Home" asp-action="Sobre">Sobre Nós</a>
+                        </li>
+                        <li class="nav-item">
+                            @* Link para a página de perfumaria *@
+                            <a class="nav-link cw fs-5 thp" asp-area="" asp-controller="Home" asp-action="Perfumes">Perfumaria</a>
+                        </li>
+                        <li class="nav-item">
+                            @* Link para a página de maquiagens *@
+                            <a class="nav-link cw fs-5 thp" asp-area="" asp-controller="Home" asp-action="Make">Make</a>
+                        </li>
+                        <li class="nav-item">
+                            @* Link para a página de maquiagens *@
+                            <a class="nav-link cw fs-5 thp" asp-area="" asp-controller="Home" asp-action="Kits">Kits</a>
+                        </li>
+                    </ul>
+
+                    @* Partial view para login/conta do usuário (mostra login ou nome) *@
+                    <partial name="_LoginPartial" />
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    @* Conteúdo principal da página: cada View renderiza seu conteúdo aqui *@
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    @* Rodapé com informações básicas e link para privacidade *@
+    <footer class="border-top footer text-muted">
+        <div class="container">
+            <a class="cw">Opaline &copy; -</a> <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+        </div>
+    </footer>
+
+    @* Scripts JavaScript necessários: jQuery, Bootstrap e scripts do site *@
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+
+    @* Se a View quiser adicionar scripts específicos, ela pode usar a seção "Scripts" *@
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

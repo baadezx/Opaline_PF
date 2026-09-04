@@ -1,0 +1,23 @@
+﻿.nav-foda {
+    background-color: black;
+}
+
+.cw {
+    color: white;
+    text-decoration: none;
+}
+
+.thp:hover {
+    transition: 0.5s;
+    color: #d341ed;
+}
+
+.footer {
+    background-color: black;
+    margin: 0px;
+    color: white;
+}
+
+.footer a {
+    color: white;
+}

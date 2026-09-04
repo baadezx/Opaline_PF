@@ -1,0 +1,6 @@
+@OpalineAPI_HostAddress = http://localhost:5245
+
+GET {{OpalineAPI_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
