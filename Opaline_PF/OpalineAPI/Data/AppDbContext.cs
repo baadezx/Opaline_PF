@@ -28,11 +28,11 @@ namespace OpalineAPI.Data
                 .Property(p => p.Preco) // Configura a propriedade Preco
                 .HasColumnType("decimal(18,2)"); // Define o tipo de coluna como decimal com precisão 18 e escala 2
 
-            // Exemplo: relacionamento 1:N entre Categoria e Produto
+            /*  // Exemplo: relacionamento 1:N entre Categoria e Produto
             modelBuilder.Entity<Categoria>() // Configura a entidade Categoria
                 .HasMany(c => c.Produtos) // Define que uma categoria pode ter muitos produtos
                 .WithOne(p => p.Categoria) // Define que cada produto tem uma categoria
-                .HasForeignKey(p => p.CategoriaId); // Define a chave estrangeira no modelo Produto
+                .HasForeignKey(p => p.CategoriaId); // Define a chave estrangeira no modelo Produto  */
         }
     }
 }

@@ -2,73 +2,51 @@
 using Microsoft.AspNetCore.JsonPatch; // Para atualizações parciais (PATCH)
 using Microsoft.EntityFrameworkCore; // Para operações com o Entity Framework Core
 using OpalineAPI.Models; // Modelos de dados (Categoria, Produto, etc.)
-using OpalineAPI.Data; // Contexto do banco de dados (AppDbContext)
+using OpalineAPI.Repositories; // Repositórios relacionados a categorias
 
 namespace OpalineAPI.Services
 {
     // Serviço responsável por gerenciar operações relacionadas a categorias
     public class CategoriaService
     {
-        private readonly AppDbContext _context; // Contexto do banco de dados
+        private readonly CategoriaRepository _cRepository; // Repositório de categorias
 
-        public CategoriaService(AppDbContext context) // Construtor com injeção de dependência
+        public CategoriaService(CategoriaRepository cRepository) // Construtor com injeção de dependência
         {
-            _context = context;
+            _cRepository = cRepository;
         }
 
         // Retorna todas as categorias
-        public async Task<List<Categoria>> GetAllAsync()
+        public async Task<List<Categoria>> GetAll()
         {
-            return await _context.Categorias
-                .Include(c => c.Produtos) // Inclui os produtos relacionados
-                .ToListAsync();
+            return await _cRepository.GetAll();
         }
 
         // Busca uma categoria pelo Id
-        public async Task<Categoria?> GetByIdAsync(Guid id)
+        public async Task<Categoria?> GetById(Guid id)
         {
-            return await _context.Categorias
-                .Include(c => c.Produtos) // Inclui os produtos relacionados
-                .FirstOrDefaultAsync(c => c.Id == id);
+            return await _cRepository.GetById(id);
         }
 
         // Cria uma nova categoria
-        public async Task<Categoria> CreateAsync(Categoria categoria)
+        public async Task<Categoria> Post(Categoria categoria)
         {
-            _context.Categorias.Add(categoria);
-            await _context.SaveChangesAsync();
-            return categoria;
+            return await _cRepository.Post(categoria);
         }
 
         // Atualiza uma categoria inteira (PUT)
-        public async Task<bool> UpdateAsync(Categoria categoria)
+        public async Task<bool> Put(Categoria categoria)
         {
-            _context.Entry(categoria).State = EntityState.Modified;
-            await _context.SaveChangesAsync();
-            return true;
-        }
-
-        // Atualiza parcialmente uma categoria (PATCH)
-        public async Task<Categoria?> PatchAsync(Guid id, JsonPatchDocument<Categoria> patchDoc)
-        {
-            var categoria = await _context.Categorias.FindAsync(id);
-            if (categoria == null) return null;
-
-            patchDoc.ApplyTo(categoria);
-            await _context.SaveChangesAsync();
-
-            return categoria;
+            return await _cRepository.Put(categoria);
         }
 
         // Remove uma categoria
-        public async Task<bool> DeleteAsync(Guid id)
+        public async Task<bool> Delete(Guid id)
         {
-            var categoria = await _context.Categorias.FindAsync(id);
+            var categoria = await _cRepository.GetById(id);
             if (categoria == null) return false;
 
-            _context.Categorias.Remove(categoria);
-            await _context.SaveChangesAsync();
-            return true;
+            return await _cRepository.Delete(id);
         }
     }
 }

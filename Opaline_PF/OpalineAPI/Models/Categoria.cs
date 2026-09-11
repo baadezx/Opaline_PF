@@ -15,8 +15,5 @@ namespace OpalineAPI.Models
         [Required] // Indica que o campo seguinte é obrigatório
         [StringLength(100)] // Define tamanho máximo da string (100 caracteres)
         public string Descricao { get; set; } // Descrição da categoria
-
-
-        public ICollection<Produto>? Produtos { get; set; } // Coleção de produtos associados a esta categoria - Relacionamento 1:N
     }
 }

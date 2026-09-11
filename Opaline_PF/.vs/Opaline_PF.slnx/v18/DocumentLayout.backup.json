@@ -3,16 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\43572869803\\Desktop\\SUPER_MEGA_BLASTER_PROJETO_FINAL_DA_OPALINE\\SUPER_MEGA_BLASTER_ULTRA_C#\\Opaline_PF\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{B66ECE1D-07B4-4BF0-9DA8-AAE8E057CD3B}|OpalineAPI\\OpalineAPI.csproj|c:\\users\\43572869803\\desktop\\super_mega_blaster_projeto_final_da_opaline\\super_mega_blaster_ultra_c#\\opaline_pf\\opalineapi\\controllers\\categoriacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B66ECE1D-07B4-4BF0-9DA8-AAE8E057CD3B}|OpalineAPI\\OpalineAPI.csproj|solutionrelative:opalineapi\\controllers\\categoriacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B66ECE1D-07B4-4BF0-9DA8-AAE8E057CD3B}|OpalineAPI\\OpalineAPI.csproj|c:\\users\\43572869803\\desktop\\super_mega_blaster_projeto_final_da_opaline\\super_mega_blaster_ultra_c#\\opaline_pf\\opalineapi\\models\\categoria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B66ECE1D-07B4-4BF0-9DA8-AAE8E057CD3B}|OpalineAPI\\OpalineAPI.csproj|solutionrelative:opalineapi\\models\\categoria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B66ECE1D-07B4-4BF0-9DA8-AAE8E057CD3B}|OpalineAPI\\OpalineAPI.csproj|c:\\users\\43572869803\\desktop\\super_mega_blaster_projeto_final_da_opaline\\super_mega_blaster_ultra_c#\\opaline_pf\\opalineapi\\services\\categoriaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B66ECE1D-07B4-4BF0-9DA8-AAE8E057CD3B}|OpalineAPI\\OpalineAPI.csproj|solutionrelative:opalineapi\\services\\categoriaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B66ECE1D-07B4-4BF0-9DA8-AAE8E057CD3B}|OpalineAPI\\OpalineAPI.csproj|c:\\users\\43572869803\\desktop\\super_mega_blaster_projeto_final_da_opaline\\super_mega_blaster_ultra_c#\\opaline_pf\\opalineapi\\controllers\\produtocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B66ECE1D-07B4-4BF0-9DA8-AAE8E057CD3B}|OpalineAPI\\OpalineAPI.csproj|solutionrelative:opalineapi\\controllers\\produtocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B66ECE1D-07B4-4BF0-9DA8-AAE8E057CD3B}|OpalineAPI\\OpalineAPI.csproj|c:\\users\\43572869803\\desktop\\super_mega_blaster_projeto_final_da_opaline\\super_mega_blaster_ultra_c#\\opaline_pf\\opalineapi\\models\\produto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B66ECE1D-07B4-4BF0-9DA8-AAE8E057CD3B}|OpalineAPI\\OpalineAPI.csproj|solutionrelative:opalineapi\\models\\produto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B66ECE1D-07B4-4BF0-9DA8-AAE8E057CD3B}|OpalineAPI\\OpalineAPI.csproj|c:\\users\\43572869803\\desktop\\super_mega_blaster_projeto_final_da_opaline\\super_mega_blaster_ultra_c#\\opaline_pf\\opalineapi\\repositories\\produtorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -23,16 +19,20 @@
       "RelativeMoniker": "D:0:0:{B66ECE1D-07B4-4BF0-9DA8-AAE8E057CD3B}|OpalineAPI\\OpalineAPI.csproj|solutionrelative:opalineapi\\services\\produtoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B66ECE1D-07B4-4BF0-9DA8-AAE8E057CD3B}|OpalineAPI\\OpalineAPI.csproj|c:\\users\\43572869803\\desktop\\super_mega_blaster_projeto_final_da_opaline\\super_mega_blaster_ultra_c#\\opaline_pf\\opalineapi\\models\\produto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B66ECE1D-07B4-4BF0-9DA8-AAE8E057CD3B}|OpalineAPI\\OpalineAPI.csproj|solutionrelative:opalineapi\\models\\produto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B66ECE1D-07B4-4BF0-9DA8-AAE8E057CD3B}|OpalineAPI\\OpalineAPI.csproj|c:\\users\\43572869803\\desktop\\super_mega_blaster_projeto_final_da_opaline\\super_mega_blaster_ultra_c#\\opaline_pf\\opalineapi\\models\\categoria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B66ECE1D-07B4-4BF0-9DA8-AAE8E057CD3B}|OpalineAPI\\OpalineAPI.csproj|solutionrelative:opalineapi\\models\\categoria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B66ECE1D-07B4-4BF0-9DA8-AAE8E057CD3B}|OpalineAPI\\OpalineAPI.csproj|c:\\users\\43572869803\\desktop\\super_mega_blaster_projeto_final_da_opaline\\super_mega_blaster_ultra_c#\\opaline_pf\\opalineapi\\services\\categoriaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B66ECE1D-07B4-4BF0-9DA8-AAE8E057CD3B}|OpalineAPI\\OpalineAPI.csproj|solutionrelative:opalineapi\\services\\categoriaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B66ECE1D-07B4-4BF0-9DA8-AAE8E057CD3B}|OpalineAPI\\OpalineAPI.csproj|c:\\users\\43572869803\\desktop\\super_mega_blaster_projeto_final_da_opaline\\super_mega_blaster_ultra_c#\\opaline_pf\\opalineapi\\repositories\\categoriarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B66ECE1D-07B4-4BF0-9DA8-AAE8E057CD3B}|OpalineAPI\\OpalineAPI.csproj|solutionrelative:opalineapi\\repositories\\categoriarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B66ECE1D-07B4-4BF0-9DA8-AAE8E057CD3B}|OpalineAPI\\OpalineAPI.csproj|c:\\users\\43572869803\\desktop\\super_mega_blaster_projeto_final_da_opaline\\super_mega_blaster_ultra_c#\\opaline_pf\\opalineapi\\controllers\\categoriacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B66ECE1D-07B4-4BF0-9DA8-AAE8E057CD3B}|OpalineAPI\\OpalineAPI.csproj|solutionrelative:opalineapi\\controllers\\categoriacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B66ECE1D-07B4-4BF0-9DA8-AAE8E057CD3B}|OpalineAPI\\OpalineAPI.csproj|c:\\users\\43572869803\\desktop\\super_mega_blaster_projeto_final_da_opaline\\super_mega_blaster_ultra_c#\\opaline_pf\\opalineapi\\controllers\\produtocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B66ECE1D-07B4-4BF0-9DA8-AAE8E057CD3B}|OpalineAPI\\OpalineAPI.csproj|solutionrelative:opalineapi\\controllers\\produtocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -42,105 +42,112 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 3,
               "Title": "ProdutoService.cs",
               "DocumentMoniker": "C:\\Users\\43572869803\\Desktop\\SUPER_MEGA_BLASTER_PROJETO_FINAL_DA_OPALINE\\SUPER_MEGA_BLASTER_ULTRA_C#\\Opaline_PF\\OpalineAPI\\Services\\ProdutoService.cs",
               "RelativeDocumentMoniker": "OpalineAPI\\Services\\ProdutoService.cs",
               "ToolTip": "C:\\Users\\43572869803\\Desktop\\SUPER_MEGA_BLASTER_PROJETO_FINAL_DA_OPALINE\\SUPER_MEGA_BLASTER_ULTRA_C#\\Opaline_PF\\OpalineAPI\\Services\\ProdutoService.cs",
               "RelativeToolTip": "OpalineAPI\\Services\\ProdutoService.cs",
-              "ViewState": "AgIAABcAAAAAAAAAAAAgwC0AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAAwDkAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-04T16:59:14.571Z"
+              "WhenOpened": "2026-09-04T16:59:14.571Z",
+              "IsPinned": true,
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
+              "Title": "Produto.cs",
+              "DocumentMoniker": "C:\\Users\\43572869803\\Desktop\\SUPER_MEGA_BLASTER_PROJETO_FINAL_DA_OPALINE\\SUPER_MEGA_BLASTER_ULTRA_C#\\Opaline_PF\\OpalineAPI\\Models\\Produto.cs",
+              "RelativeDocumentMoniker": "OpalineAPI\\Models\\Produto.cs",
+              "ToolTip": "C:\\Users\\43572869803\\Desktop\\SUPER_MEGA_BLASTER_PROJETO_FINAL_DA_OPALINE\\SUPER_MEGA_BLASTER_ULTRA_C#\\Opaline_PF\\OpalineAPI\\Models\\Produto.cs",
+              "RelativeToolTip": "OpalineAPI\\Models\\Produto.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAYwCEAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-28T12:53:51.915Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Categoria.cs",
+              "DocumentMoniker": "C:\\Users\\43572869803\\Desktop\\SUPER_MEGA_BLASTER_PROJETO_FINAL_DA_OPALINE\\SUPER_MEGA_BLASTER_ULTRA_C#\\Opaline_PF\\OpalineAPI\\Models\\Categoria.cs",
+              "RelativeDocumentMoniker": "OpalineAPI\\Models\\Categoria.cs",
+              "ToolTip": "C:\\Users\\43572869803\\Desktop\\SUPER_MEGA_BLASTER_PROJETO_FINAL_DA_OPALINE\\SUPER_MEGA_BLASTER_ULTRA_C#\\Opaline_PF\\OpalineAPI\\Models\\Categoria.cs*",
+              "RelativeToolTip": "OpalineAPI\\Models\\Categoria.cs*",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAAABAAAABHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-11T16:03:15.295Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "ProdutoController.cs",
               "DocumentMoniker": "C:\\Users\\43572869803\\Desktop\\SUPER_MEGA_BLASTER_PROJETO_FINAL_DA_OPALINE\\SUPER_MEGA_BLASTER_ULTRA_C#\\Opaline_PF\\OpalineAPI\\Controllers\\ProdutoController.cs",
               "RelativeDocumentMoniker": "OpalineAPI\\Controllers\\ProdutoController.cs",
               "ToolTip": "C:\\Users\\43572869803\\Desktop\\SUPER_MEGA_BLASTER_PROJETO_FINAL_DA_OPALINE\\SUPER_MEGA_BLASTER_ULTRA_C#\\Opaline_PF\\OpalineAPI\\Controllers\\ProdutoController.cs",
               "RelativeToolTip": "OpalineAPI\\Controllers\\ProdutoController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADoAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAADIAAAAAAAAAAAAQwEIAAAA8AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-28T13:44:11.694Z"
+              "WhenOpened": "2026-08-28T13:44:11.694Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "ProdutoRepository.cs",
               "DocumentMoniker": "C:\\Users\\43572869803\\Desktop\\SUPER_MEGA_BLASTER_PROJETO_FINAL_DA_OPALINE\\SUPER_MEGA_BLASTER_ULTRA_C#\\Opaline_PF\\OpalineAPI\\Repositories\\ProdutoRepository.cs",
               "RelativeDocumentMoniker": "OpalineAPI\\Repositories\\ProdutoRepository.cs",
               "ToolTip": "C:\\Users\\43572869803\\Desktop\\SUPER_MEGA_BLASTER_PROJETO_FINAL_DA_OPALINE\\SUPER_MEGA_BLASTER_ULTRA_C#\\Opaline_PF\\OpalineAPI\\Repositories\\ProdutoRepository.cs",
               "RelativeToolTip": "OpalineAPI\\Repositories\\ProdutoRepository.cs",
-              "ViewState": "AgIAAAoAAAAAAAAAAAAQwDwAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABUAAAAAAAAAAAAuwEgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-04T15:45:38.268Z"
+              "WhenOpened": "2026-09-04T15:45:38.268Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "CategoriaService.cs",
               "DocumentMoniker": "C:\\Users\\43572869803\\Desktop\\SUPER_MEGA_BLASTER_PROJETO_FINAL_DA_OPALINE\\SUPER_MEGA_BLASTER_ULTRA_C#\\Opaline_PF\\OpalineAPI\\Services\\CategoriaService.cs",
               "RelativeDocumentMoniker": "OpalineAPI\\Services\\CategoriaService.cs",
               "ToolTip": "C:\\Users\\43572869803\\Desktop\\SUPER_MEGA_BLASTER_PROJETO_FINAL_DA_OPALINE\\SUPER_MEGA_BLASTER_ULTRA_C#\\Opaline_PF\\OpalineAPI\\Services\\CategoriaService.cs",
               "RelativeToolTip": "OpalineAPI\\Services\\CategoriaService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABYAAAAAAAAAAAAIwCsAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-09-04T15:41:29.612Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 6,
               "Title": "CategoriaController.cs",
               "DocumentMoniker": "C:\\Users\\43572869803\\Desktop\\SUPER_MEGA_BLASTER_PROJETO_FINAL_DA_OPALINE\\SUPER_MEGA_BLASTER_ULTRA_C#\\Opaline_PF\\OpalineAPI\\Controllers\\CategoriaController.cs",
               "RelativeDocumentMoniker": "OpalineAPI\\Controllers\\CategoriaController.cs",
               "ToolTip": "C:\\Users\\43572869803\\Desktop\\SUPER_MEGA_BLASTER_PROJETO_FINAL_DA_OPALINE\\SUPER_MEGA_BLASTER_ULTRA_C#\\Opaline_PF\\OpalineAPI\\Controllers\\CategoriaController.cs",
               "RelativeToolTip": "OpalineAPI\\Controllers\\CategoriaController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABgAAAAAAAAAAAAgwA8AAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-08-28T15:26:23.788Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Categoria.cs",
-              "DocumentMoniker": "C:\\Users\\43572869803\\Desktop\\SUPER_MEGA_BLASTER_PROJETO_FINAL_DA_OPALINE\\SUPER_MEGA_BLASTER_ULTRA_C#\\Opaline_PF\\OpalineAPI\\Models\\Categoria.cs",
-              "RelativeDocumentMoniker": "OpalineAPI\\Models\\Categoria.cs",
-              "ToolTip": "C:\\Users\\43572869803\\Desktop\\SUPER_MEGA_BLASTER_PROJETO_FINAL_DA_OPALINE\\SUPER_MEGA_BLASTER_ULTRA_C#\\Opaline_PF\\OpalineAPI\\Models\\Categoria.cs",
-              "RelativeToolTip": "OpalineAPI\\Models\\Categoria.cs",
-              "ViewState": "AgIAAAQAAAAAAAAAAAAAABMAAAAiAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-28T13:03:23.11Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "Produto.cs",
-              "DocumentMoniker": "C:\\Users\\43572869803\\Desktop\\SUPER_MEGA_BLASTER_PROJETO_FINAL_DA_OPALINE\\SUPER_MEGA_BLASTER_ULTRA_C#\\Opaline_PF\\OpalineAPI\\Models\\Produto.cs",
-              "RelativeDocumentMoniker": "OpalineAPI\\Models\\Produto.cs",
-              "ToolTip": "C:\\Users\\43572869803\\Desktop\\SUPER_MEGA_BLASTER_PROJETO_FINAL_DA_OPALINE\\SUPER_MEGA_BLASTER_ULTRA_C#\\Opaline_PF\\OpalineAPI\\Models\\Produto.cs",
-              "RelativeToolTip": "OpalineAPI\\Models\\Produto.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAAwCEAAAAfAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-28T12:53:51.915Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
               "Title": "CategoriaRepository.cs",
               "DocumentMoniker": "C:\\Users\\43572869803\\Desktop\\SUPER_MEGA_BLASTER_PROJETO_FINAL_DA_OPALINE\\SUPER_MEGA_BLASTER_ULTRA_C#\\Opaline_PF\\OpalineAPI\\Repositories\\CategoriaRepository.cs",
               "RelativeDocumentMoniker": "OpalineAPI\\Repositories\\CategoriaRepository.cs",
               "ToolTip": "C:\\Users\\43572869803\\Desktop\\SUPER_MEGA_BLASTER_PROJETO_FINAL_DA_OPALINE\\SUPER_MEGA_BLASTER_ULTRA_C#\\Opaline_PF\\OpalineAPI\\Repositories\\CategoriaRepository.cs",
               "RelativeToolTip": "OpalineAPI\\Repositories\\CategoriaRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADwAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAAABMAAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-04T15:48:45.639Z"
+              "WhenOpened": "2026-09-04T15:48:45.639Z",
+              "EditorCaption": ""
             }
           ]
         }

@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc; // Importa o namespace para funcionalidades do ASP.NET Core MVC
 using OpalineAPI.Models; // Importa o namespace onde estão os modelos de dados (Categoria, Produto, etc.)
 using Microsoft.AspNetCore.JsonPatch; // Importa o namespace para manipulação de patches JSON (para atualizações parciais)
-using OpalineAPI.Data; // Importa o namespace onde está o contexto do banco de dados (AppDbContext)
+using OpalineAPI.Services; // Importa o namespace onde está o serviço de categorias
 
 namespace OpalineAPI.Controllers
 {
@@ -9,27 +9,31 @@ namespace OpalineAPI.Controllers
     [ApiController] // O atributo [ApiController] habilita recursos automáticos de validação e binding]
     public class CategoriaController : ControllerBase
     {
-        private readonly AppDbContext _context; // Contexto do banco de dados (Entity Framework Core)
+        private readonly CategoriaService _cService; // Serviço de categorias
 
 
-        public CategoriaController(AppDbContext context) // Construtor que recebe o contexto via injeção de dependência
+        public CategoriaController(CategoriaService cService) // Construtor que recebe o serviço via injeção de dependência
         {
-            _context = context;
+            _cService = cService;
         }
 
 
         // GET: api/categorias
         // Retorna todas as categorias cadastradas
         [HttpGet]
-        public IActionResult GetCategorias() => Ok(_context.Categorias.ToList());
+        public async Task<IActionResult> GetAll()
+        {
+            var categorias = await _cService.GetAll();
+            return Ok(categorias); // Retorna 200 com todas as categorias
+        }
 
 
         // GET: api/categorias/{id}
         // Busca uma categoria específica pelo seu Id
         [HttpGet("{id}")]
-        public IActionResult GetCategoria(Guid id)
+        public async Task<IActionResult> GetById(Guid id)
         {
-            var categoria = _context.Categorias.Find(id);
+            var categoria = await _cService.GetById(id);
             if (categoria == null) return NotFound(); // Retorna 404 se não encontrar
             return Ok(categoria); // Retorna 200 com a categoria
         }
@@ -38,66 +42,37 @@ namespace OpalineAPI.Controllers
         // POST: api/categorias
         // Cria uma nova categoria
         [HttpPost]
-        public IActionResult PostCategoria([FromBody] Categoria categoria)
+        public async Task<IActionResult> Post([FromBody] Categoria categoria)
         {
-            if (!ModelState.IsValid) return BadRequest(ModelState); // Valida os dados enviados com base nas DataAnnotations
+            if (!ModelState.IsValid) return BadRequest(ModelState);
 
-            _context.Categorias.Add(categoria); // Adiciona a categoria ao contexto
-            _context.SaveChanges(); // Salva as alterações no banco de dados
-
-            return CreatedAtAction(nameof(GetCategoria), new { id = categoria.Id }, categoria); // Retorna 201 com a localização/rota da nova categoria
+            var created = await _cService.Post(categoria); // Persistido pelo serviço
+            return CreatedAtAction(nameof(GetById), new { id = created.Id }, created);
         }
 
 
         // PUT: api/categorias/{id}
         // Atualiza uma categoria inteira (todos os campos)
         [HttpPut("{id}")]
-        public IActionResult PutCategoria(Guid id, [FromBody] Categoria categoria)
+        public async Task<IActionResult> Put(Guid id, [FromBody] Categoria categoria)
         {
-            if (id != categoria.Id) return BadRequest(); // Garante que o Id da URL bate com o objeto
-
-            // Marca o objeto como modificado para o EF Core atualizar
-            _context.Entry(categoria).State = Microsoft.EntityFrameworkCore.EntityState.Modified;
-            _context.SaveChanges();
-
-            return NoContent(); // Retorna 204 indicando sucesso
-        }
-
-
-        // PATCH: api/categorias/{id}
-        // Atualiza parcialmente uma categoria (somente os campos enviados)
-        [HttpPatch("{id}")]
-        public IActionResult PatchCategoria(Guid id, [FromBody] JsonPatchDocument<Categoria> patchDoc)
-        {
-            if (patchDoc == null) return BadRequest(); // Se não veio nada, retorna 400
-
-            var categoria = _context.Categorias.Find(id);
-            if (categoria == null) return NotFound(); // Se não existe, retorna 404
-
-            // Aplica as alterações do patch no objeto encontrado
-            patchDoc.ApplyTo(categoria, (Microsoft.AspNetCore.JsonPatch.Adapters.IObjectAdapter)ModelState); // Aplica o patch e valida o modelo
-
-            // Valida se o objeto continua válido após o patch
             if (!ModelState.IsValid) return BadRequest(ModelState);
 
-            _context.SaveChanges(); // Persiste as mudanças
+            var updated = await _cService.Put(categoria);
+            if (!updated) return NotFound(); // ou BadRequest() dependendo da semântica do serviço
 
-            return Ok(categoria); // Retorna a categoria atualizada
+            return NoContent(); // retorna 204 quando atualizado com sucesso
         }
 
 
         // DELETE: api/categorias/{id}
         // Remove uma categoria do banco
         [HttpDelete("{id}")]
-        public IActionResult DeleteCategoria(Guid id)
+        public async Task<IActionResult> Delete(Guid id)
         {
-            var categoria = _context.Categorias.Find(id);
-            if (categoria == null) return NotFound(); // Se não existe, retorna 404
-
-            _context.Categorias.Remove(categoria); // Remove do contexto
-            _context.SaveChanges(); // Persiste a exclusão
-
-            return NoContent(); // Retorna 204 indicando que foi removida
+            var deleted = await _cService.Delete(id);
+            if (!deleted) return NotFound();
+            return NoContent();
         }
     }
 }

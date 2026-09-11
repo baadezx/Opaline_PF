@@ -1,17 +1,9 @@
 {
-  "openapi": "3.1.1",
+  "openapi": "3.0.4",
   "info": {
-    "title": "OpalineAPI | v1",
-    "version": "1.0.0"
+    "title": "OpalineAPI",
+    "version": "1.0"
   },
-  "servers": [
-    {
-      "url": "https://localhost:7001"
-    },
-    {
-      "url": "http://localhost:5245"
-    }
-  ],
   "paths": {
     "/api/Categoria": {
       "get": {
@@ -45,8 +37,7 @@
                 "$ref": "#/components/schemas/Categoria"
               }
             }
-          },
-          "required": true
+          }
         },
         "responses": {
           "200": {
@@ -109,49 +100,7 @@
                 "$ref": "#/components/schemas/Categoria"
               }
             }
-          },
-          "required": true
-        },
-        "responses": {
-          "200": {
-            "description": "OK"
           }
-        }
-      },
-      "patch": {
-        "tags": [
-          "Categoria"
-        ],
-        "parameters": [
-          {
-            "name": "id",
-            "in": "path",
-            "required": true,
-            "schema": {
-              "type": "string",
-              "format": "uuid"
-            }
-          }
-        ],
-        "requestBody": {
-          "content": {
-            "application/json": {
-              "schema": {
-                "$ref": "#/components/schemas/JsonPatchDocumentOfCategoria"
-              }
-            },
-            "text/json": {
-              "schema": {
-                "$ref": "#/components/schemas/JsonPatchDocumentOfCategoria"
-              }
-            },
-            "application/*+json": {
-              "schema": {
-                "$ref": "#/components/schemas/JsonPatchDocumentOfCategoria"
-              }
-            }
-          },
-          "required": true
         },
         "responses": {
           "200": {
@@ -213,8 +162,7 @@
                 "$ref": "#/components/schemas/Produto"
               }
             }
-          },
-          "required": true
+          }
         },
         "responses": {
           "200": {
@@ -277,49 +225,7 @@
                 "$ref": "#/components/schemas/Produto"
               }
             }
-          },
-          "required": true
-        },
-        "responses": {
-          "200": {
-            "description": "OK"
           }
-        }
-      },
-      "patch": {
-        "tags": [
-          "Produto"
-        ],
-        "parameters": [
-          {
-            "name": "id",
-            "in": "path",
-            "required": true,
-            "schema": {
-              "type": "string",
-              "format": "uuid"
-            }
-          }
-        ],
-        "requestBody": {
-          "content": {
-            "application/json": {
-              "schema": {
-                "$ref": "#/components/schemas/JsonPatchDocumentOfProduto"
-              }
-            },
-            "text/json": {
-              "schema": {
-                "$ref": "#/components/schemas/JsonPatchDocumentOfProduto"
-              }
-            },
-            "application/*+json": {
-              "schema": {
-                "$ref": "#/components/schemas/JsonPatchDocumentOfProduto"
-              }
-            }
-          },
-          "required": true
         },
         "responses": {
           "200": {
@@ -393,8 +299,8 @@
     "schemas": {
       "Categoria": {
         "required": [
-          "nome",
-          "descricao"
+          "descricao",
+          "nome"
         ],
         "type": "object",
         "properties": {
@@ -411,116 +317,14 @@
             "maxLength": 100,
             "minLength": 0,
             "type": "string"
-          },
-          "produtos": {
-            "type": [
-              "null",
-              "array"
-            ],
-            "items": {
-              "$ref": "#/components/schemas/Produto"
-            }
           }
-        }
-      },
-      "IContractResolver": {
-        "type": "object"
-      },
-      "JsonPatchDocumentOfCategoria": {
-        "type": "object",
-        "properties": {
-          "operations": {
-            "type": [
-              "null",
-              "array"
-            ],
-            "items": {
-              "$ref": "#/components/schemas/OperationOfCategoria"
-            }
-          },
-          "contractResolver": {
-            "$ref": "#/components/schemas/IContractResolver"
-          }
-        }
-      },
-      "JsonPatchDocumentOfProduto": {
-        "type": "object",
-        "properties": {
-          "operations": {
-            "type": [
-              "null",
-              "array"
-            ],
-            "items": {
-              "$ref": "#/components/schemas/OperationOfProduto"
-            }
-          },
-          "contractResolver": {
-            "$ref": "#/components/schemas/IContractResolver"
-          }
-        }
-      },
-      "OperationOfCategoria": {
-        "type": "object",
-        "properties": {
-          "value": { },
-          "operationType": {
-            "$ref": "#/components/schemas/OperationType"
-          },
-          "path": {
-            "type": [
-              "null",
-              "string"
-            ]
-          },
-          "op": {
-            "type": [
-              "null",
-              "string"
-            ]
-          },
-          "from": {
-            "type": [
-              "null",
-              "string"
-            ]
-          }
-        }
-      },
-      "OperationOfProduto": {
-        "type": "object",
-        "properties": {
-          "value": { },
-          "operationType": {
-            "$ref": "#/components/schemas/OperationType"
-          },
-          "path": {
-            "type": [
-              "null",
-              "string"
-            ]
-          },
-          "op": {
-            "type": [
-              "null",
-              "string"
-            ]
-          },
-          "from": {
-            "type": [
-              "null",
-              "string"
-            ]
-          }
-        }
-      },
-      "OperationType": {
-        "type": "integer"
+        },
+        "additionalProperties": false
       },
       "Produto": {
         "required": [
-          "nome",
           "descricao",
+          "nome",
           "preco"
         ],
         "type": "object",
@@ -540,37 +344,23 @@
             "type": "string"
           },
           "preco": {
-            "pattern": "^-?(?:0|[1-9]\\d*)(?:\\.\\d+)?$",
-            "type": [
-              "number",
-              "string"
-            ],
-            "format": "double"
+            "type": "number",
+            "format": "currency"
           },
           "estoque": {
-            "pattern": "^-?(?:0|[1-9]\\d*)$",
-            "type": [
-              "null",
-              "integer",
-              "string"
-            ],
-            "format": "int32"
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
           },
           "categoriaId": {
             "type": "string",
             "format": "uuid"
           },
           "categoria": {
-            "oneOf": [
-              {
-                "type": "null"
-              },
-              {
-                "$ref": "#/components/schemas/Categoria"
-              }
-            ]
+            "$ref": "#/components/schemas/Categoria"
           }
-        }
+        },
+        "additionalProperties": false
       },
       "WeatherForecast": {
         "type": "object",
@@ -580,28 +370,20 @@
             "format": "date"
           },
           "temperatureC": {
-            "pattern": "^-?(?:0|[1-9]\\d*)$",
-            "type": [
-              "integer",
-              "string"
-            ],
+            "type": "integer",
             "format": "int32"
           },
           "temperatureF": {
-            "pattern": "^-?(?:0|[1-9]\\d*)$",
-            "type": [
-              "integer",
-              "string"
-            ],
-            "format": "int32"
+            "type": "integer",
+            "format": "int32",
+            "readOnly": true
           },
           "summary": {
-            "type": [
-              "null",
-              "string"
-            ]
+            "type": "string",
+            "nullable": true
           }
-        }
+        },
+        "additionalProperties": false
       }
     }
   },
