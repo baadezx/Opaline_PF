@@ -17,6 +17,7 @@ namespace OpalineAPI.Data
         // Cada DbSet<T> corresponde a uma entidade (classe) que será persistida
         public DbSet<Produto> Produtos { get; set; }
         public DbSet<Categoria> Categorias { get; set; }
+        public DbSet<Compra> Compras { get; set; } // <-- aqui está o ponto
 
         // Configurações adicionais podem ser feitas aqui
         protected override void OnModelCreating(ModelBuilder modelBuilder)

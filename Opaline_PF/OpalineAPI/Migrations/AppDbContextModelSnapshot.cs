@@ -43,6 +43,37 @@ namespace OpalineAPI.Migrations
                     b.ToTable("Categorias");
                 });
 
+            modelBuilder.Entity("OpalineAPI.Models.Compra", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<DateTime?>("DataCancelamento")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime>("DataCompra")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime>("DataEntrega")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime?>("DataEntregue")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("MetodoPagamento")
+                        .IsRequired()
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)");
+
+                    b.Property<Guid>("ProdutoId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Compras");
+                });
+
             modelBuilder.Entity("OpalineAPI.Models.Produto", b =>
                 {
                     b.Property<Guid>("Id")
@@ -78,17 +109,12 @@ namespace OpalineAPI.Migrations
             modelBuilder.Entity("OpalineAPI.Models.Produto", b =>
                 {
                     b.HasOne("OpalineAPI.Models.Categoria", "Categoria")
-                        .WithMany("Produtos")
+                        .WithMany()
                         .HasForeignKey("CategoriaId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
                     b.Navigation("Categoria");
-                });
-
-            modelBuilder.Entity("OpalineAPI.Models.Categoria", b =>
-                {
-                    b.Navigation("Produtos");
                 });
 #pragma warning restore 612, 618
         }

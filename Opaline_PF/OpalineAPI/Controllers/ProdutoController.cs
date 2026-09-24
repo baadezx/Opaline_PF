@@ -79,7 +79,7 @@ namespace OpalineAPI.Controllers
             var deleted = await _pService.Delete(id);
             if (!deleted) return StatusCode(StatusCodes.Status500InternalServerError);
     
-            return NoContent();
+            return Ok();
         }
     }
 }

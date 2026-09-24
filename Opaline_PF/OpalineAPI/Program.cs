@@ -32,6 +32,9 @@ builder.Services.AddScoped<ProdutoRepository>();
 builder.Services.AddScoped<CategoriaService>();
 builder.Services.AddScoped<ProdutoService>();
 
+builder.Services.AddScoped<CompraService>();
+builder.Services.AddScoped<CompraRepository>();
+
 // 4. Configurar controllers MVC para a API
 builder.Services.AddControllers();
 
