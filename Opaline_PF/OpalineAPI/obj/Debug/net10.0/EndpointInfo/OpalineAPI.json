@@ -495,7 +495,8 @@
       "Compra": {
         "required": [
           "metodoPagamento",
-          "produtoId"
+          "produtoId",
+          "quantidade"
         ],
         "type": "object",
         "properties": {
@@ -511,6 +512,10 @@
             "maxLength": 50,
             "minLength": 0,
             "type": "string"
+          },
+          "quantidade": {
+            "type": "integer",
+            "format": "int32"
           },
           "dataCompra": {
             "type": "string",
@@ -530,7 +535,7 @@
             "format": "date-time",
             "nullable": true
           },
-          "isCancelled": {
+          "estaCancelada": {
             "type": "boolean",
             "readOnly": true
           },

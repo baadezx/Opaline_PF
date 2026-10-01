@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("OpalineAPI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9ea9173c253c0977bb0928baa080b4363601f1d4")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+97ac018a46261c5c7c3f3c876e0dba48354b900a")]
 [assembly: System.Reflection.AssemblyProductAttribute("OpalineAPI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("OpalineAPI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -43,7 +43,7 @@ namespace OpalineAPI.Services
         // Atualiza um produto inteiro (PUT)
         public async Task<bool> Put(Produto produto)
         {
-            return await _pRepository.Put(produto); // Chama o método Put do repositório
+            return await _pRepository.PutP(produto); // Chama o método Put do repositório
         }
 
 

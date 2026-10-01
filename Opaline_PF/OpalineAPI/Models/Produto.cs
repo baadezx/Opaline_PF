@@ -27,7 +27,17 @@ public class Produto
 
     public int? Estoque { get; set; } // Quantidade em estoque; int? permite valor nulo quando não informado
 
-  
+    public void BaixarEstoque(int quantidade)
+    {
+        if (quantidade <= 0)
+            throw new ArgumentException("Quantidade inválida.");
+        if (Estoque < quantidade)
+            throw new InvalidOperationException("Estoque insuficiente.");
+
+        Estoque -= quantidade;
+    }
+
+
     public Guid CategoriaId { get; set; } // Identificador da categoria relacionada (chave estrangeira)
 
   

@@ -16,6 +16,8 @@ namespace OpalineAPI.Models
         [StringLength(50)] // Limita o tamanho máximo da string para 50 caracteres
         public string MetodoPagamento { get; set; } // Método de pagamento utilizado na compra
 
+        [Required] // Indica que o campo seguinte é obrigatório
+        public int Quantidade { get; set; }
 
         public DateTime DataCompra { get; set; } // Data da compra
 
@@ -28,7 +30,7 @@ namespace OpalineAPI.Models
 
         public DateTime? DataCancelamento { get; set; } // Data que a compra foi cancelada
 
-        public bool IsCancelled => DataCancelamento.HasValue; // Propriedade calculada para verificar se a compra foi cancelada
+        public bool EstaCancelada => DataCancelamento.HasValue; // Propriedade calculada para verificar se a compra foi cancelada
 
         public bool EstaEntregue => DataEntregue.HasValue; // Propriedade calculada para verificar se a compra foi entregue
     }

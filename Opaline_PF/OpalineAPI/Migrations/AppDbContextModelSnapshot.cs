@@ -69,6 +69,9 @@ namespace OpalineAPI.Migrations
                     b.Property<Guid>("ProdutoId")
                         .HasColumnType("uniqueidentifier");
 
+                    b.Property<int>("Quantidade")
+                        .HasColumnType("int");
+
                     b.HasKey("Id");
 
                     b.ToTable("Compras");

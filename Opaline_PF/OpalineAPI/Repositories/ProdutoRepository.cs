@@ -47,7 +47,7 @@ namespace OpalineAPI.Repositories
         /// </summary>
         /// <param name="produto">O produto com os dados atualizados</param>
         /// <returns>True se atualizado com sucesso, false caso contrário</returns>
-        public async Task<bool> Put(Produto produto)
+        public async Task<bool> PutP(Produto produto)
         {
             _context.Entry(produto).State = EntityState.Modified;
             await _context.SaveChangesAsync();
