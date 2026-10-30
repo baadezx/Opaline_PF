@@ -1,5 +1,6 @@
 ﻿.nav-foda {
-    background-color: black;
+    background-color: #bb64e9;
+    color: white;
 }
 
 .cw {
@@ -7,17 +8,88 @@
     text-decoration: none;
 }
 
+.thp {
+    transition: 0.5s;
+    margin-left: 5px;
+    margin-right: 5px;
+    font-family: Tahoma;
+}
+
 .thp:hover {
     transition: 0.5s;
-    color: #d341ed;
+    color: white;
+    background-color: #00000026;
 }
 
 .footer {
-    background-color: black;
+    background-color: #bb64e9;
     margin: 0px;
     color: white;
+    padding-bottom: 0px;
 }
 
 .footer a {
     color: white;
+}
+
+.fc {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 20px;
+}
+
+.fc-dir {
+    display: flex;
+    flex-direction: row;
+}
+
+.fc-esq {
+    display: flex;
+    flex-direction: row;
+    margin-right: 30px;
+}
+
+.departamentos {
+    display: flex;
+    flex-direction: column;
+    margin-right: 30px;
+    text-decoration: none;
+}
+
+.departamentos a {
+    text-decoration: none;
+}
+
+.contatos {
+    margin-right: 30px;
+    text-decoration: none;
+}
+
+.contatos a {
+    text-decoration: none;
+}
+
+.fast-nav {
+    display: flex;
+    flex-direction: column;
+}
+
+.fast-nav a {
+    text-decoration: none;
+}
+
+.pagamentos img {
+    width: 250px;
+}
+
+.fca {
+    transition: 0.5s;
+}
+
+.fca:hover {
+    transition: 0.5s;
+    color: white;
+    padding: 2px;
+    background-color: #00000026;
 }

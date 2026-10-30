@@ -1,6 +1,9 @@
 wwwroot\css\layout.css
 wwwroot\css\site.css
 wwwroot\favicon.ico
+wwwroot\insta-sim-img1.jpg
+wwwroot\insta-sim-img2.jpg
+wwwroot\insta-sim-img3.jpg
 wwwroot\js\site.js
 wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css
 wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css.map
@@ -62,6 +65,13 @@ wwwroot\lib\jquery\dist\jquery.slim.js
 wwwroot\lib\jquery\dist\jquery.slim.min.js
 wwwroot\lib\jquery\dist\jquery.slim.min.map
 wwwroot\lib\jquery\LICENSE.txt
+wwwroot\Logo1.png
+wwwroot\Logo2.png
+wwwroot\Logo3.png
+wwwroot\Logo4.png
+wwwroot\pag-icons.jpg
+wwwroot\sim\instagram_opaline_store.html
+wwwroot\sim\whatsapp_iniciar_conversa_5514994691945.html
 C:\Users\43572869803\Desktop\SUPER_MEGA_BLASTER_PROJETO_FINAL_DA_OPALINE\SUPER_MEGA_BLASTER_ULTRA_C#\Opaline_PF\Opaline_PF\wwwroot\js\site.js
 C:\Users\43572869803\Desktop\SUPER_MEGA_BLASTER_PROJETO_FINAL_DA_OPALINE\SUPER_MEGA_BLASTER_ULTRA_C#\Opaline_PF\Opaline_PF\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css
 C:\Users\43572869803\Desktop\SUPER_MEGA_BLASTER_PROJETO_FINAL_DA_OPALINE\SUPER_MEGA_BLASTER_ULTRA_C#\Opaline_PF\Opaline_PF\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css.map
@@ -125,3 +135,5 @@ C:\Users\43572869803\Desktop\SUPER_MEGA_BLASTER_PROJETO_FINAL_DA_OPALINE\SUPER_M
 C:\Users\43572869803\Desktop\SUPER_MEGA_BLASTER_PROJETO_FINAL_DA_OPALINE\SUPER_MEGA_BLASTER_ULTRA_C#\Opaline_PF\Opaline_PF\wwwroot\favicon.ico
 C:\Users\43572869803\Desktop\SUPER_MEGA_BLASTER_PROJETO_FINAL_DA_OPALINE\SUPER_MEGA_BLASTER_ULTRA_C#\Opaline_PF\Opaline_PF\wwwroot\css\site.css
 C:\Users\43572869803\Desktop\SUPER_MEGA_BLASTER_PROJETO_FINAL_DA_OPALINE\SUPER_MEGA_BLASTER_ULTRA_C#\Opaline_PF\Opaline_PF\wwwroot\css\layout.css
+C:\Users\43572869803\Desktop\SUPER_MEGA_BLASTER_PROJETO_FINAL_DA_OPALINE\SUPER_MEGA_BLASTER_ULTRA_C#\Opaline_PF\Opaline_PF\wwwroot\sim\instagram_opaline_store.html
+C:\Users\43572869803\Desktop\SUPER_MEGA_BLASTER_PROJETO_FINAL_DA_OPALINE\SUPER_MEGA_BLASTER_ULTRA_C#\Opaline_PF\Opaline_PF\wwwroot\sim\whatsapp_iniciar_conversa_5514994691945.html

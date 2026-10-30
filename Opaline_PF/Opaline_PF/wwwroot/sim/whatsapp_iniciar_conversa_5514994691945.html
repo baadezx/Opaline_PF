@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compartilhe no WhatsApp</title>
+    <link rel="icon" href="https://static.whatsapp.net/rsrc.php/v3/yP/r/r2ZFegCw5Yx.png" type="image/png">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f0f2f5;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            align-items: center;
+        }
+
+        /* Header oficial do WhatsApp API */
+        header {
+            width: 100%;
+            background-color: #fff;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+            padding: 16px 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        .header-container {
+            width: 100%;
+            max-width: 980px;
+            padding: 0 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo img {
+            height: 33px;
+        }
+
+        /* Container Principal */
+        main {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            padding: 20px;
+        }
+
+        .card {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+            width: 100%;
+            max-width: 480px;
+            padding: 40px 32px;
+            text-align: center;
+        }
+
+        .wa-icon-main {
+            width: 72px;
+            height: 72px;
+            margin-bottom: 24px;
+        }
+
+        h1 {
+            font-size: 20px;
+            color: #1c1e21;
+            font-weight: 500;
+            margin-bottom: 8px;
+        }
+
+        .phone-number {
+            font-size: 17px;
+            color: #667781;
+            margin-bottom: 20px;
+            font-weight: 400;
+        }
+
+        /* Caixa de mensagem pré-definida */
+        .message-box {
+            background-color: #f8f9fa;
+            border: 1px solid #e9edef;
+            border-radius: 8px;
+            padding: 14px 16px;
+            font-size: 15px;
+            color: #3b4a54;
+            text-align: left;
+            margin-bottom: 28px;
+            line-height: 1.4;
+            position: relative;
+        }
+
+        .message-box::before {
+            content: "Mensagem pré-definida:";
+            display: block;
+            font-size: 11px;
+            text-transform: uppercase;
+            color: #8696a0;
+            font-weight: 600;
+            margin-bottom: 4px;
+            letter-spacing: 0.5px;
+        }
+
+        /* Botão Verde Oficial */
+        .btn-chat {
+            display: inline-block;
+            width: 100%;
+            background-color: #00a884;
+            color: #fff;
+            text-decoration: none;
+            font-size: 15px;
+            font-weight: 600;
+            padding: 12px 24px;
+            border-radius: 24px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            transition: background-color 0.1s ease;
+        }
+
+        .btn-chat:hover {
+            background-color: #008f71;
+        }
+
+        .app-download-text {
+            margin-top: 24px;
+            font-size: 14px;
+            color: #667781;
+        }
+
+        .app-download-text a {
+            color: #00a884;
+            text-decoration: none;
+        }
+
+        .app-download-text a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <img src="~/sim/wpp-sim-img.png" alt="WhatsApp">
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="card">
+            <!-- Ícone oficial de conversa -->
+            <img class="wa-icon-main" src="~/sim/wpp-sim-img.png" alt="WhatsApp Icon">
+            
+            <h1>Converse com este número no WhatsApp</h1>
+            <div class="phone-number">+55 (14) 99469-1945</div>
+
+            <!-- Bloco de mensagem personalizada inserido aqui -->
+            <div class="message-box">
+                Olá, vim pelo link! gostaria de mais informações.
+            </div>
+
+            <a href="#" class="btn-chat" onclick="return false;">CONVERSAR</a>
+
+            <div class="app-download-text">
+                Não tem o WhatsApp ainda? <a href="#" onclick="return false;">Baixe aqui</a>
+            </div>
+        </div>
+    </main>
+
+</body>
+</html>

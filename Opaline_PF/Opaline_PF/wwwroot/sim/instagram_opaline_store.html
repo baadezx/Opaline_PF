@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram - opaline.store</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        }
+        body {
+            background-color: #000000;
+            color: #f5f5f5;
+            display: flex;
+            justify-content: center;
+            min-height: 100vh;
+        }
+        .container {
+            width: 100%;
+            max-width: 935px;
+            padding: 30px 20px 0;
+        }
+        header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 44px;
+            border-bottom: 1px solid #262626;
+            padding-bottom: 44px;
+        }
+        .profile-pic-container {
+            flex-left: 0;
+            width: 30%;
+            display: flex;
+            justify-content: center;
+            margin-right: 30px;
+        }
+        .profile-pic {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            background-color: #a855f7;
+            background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIAAAACACAYAAADDPmHLAAAACXBIWXMAAAsTAAALEwEAmpwYAAAECklEQVR4nO3bS4hVVRzH8e+ZmXmZ0bS0pEwzS6InmZkkRRA96ImoRRE96EGvRxBBEUUP6oEPUYt6UIsg6mFEUUP0oIcm9KAn9SAtKzPNpBydaWbOzPTwX7vGgXvOnXvO3v85v99vssbe679mz9777L0WAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADA/+66FliMNo8Anm0eAzS7f8f9wOfA28BHwPvAn8D37v6D/9Wre3629wIet3wF8Anwbyz8P8CbwM9N4PfAeeD/9tqd3b7gYvYg4AnwD8ArwKvAq8BbwAvA903gH8CvwM/Ar8CvwPfAb8Dvgv/X6pYF7kGgP7YfA08BjwOPAncDHwGPAW8APzWBfwA/NIF/Ar8CvwK/Ar8CvwK/A78DvwO/C/5fqx6w6AGrHrD6UfAI8AjwKPAI8CjwCPCYuw8D9wIPN4F/AD80gX8CvwK/Ar8CvwK/A78DvwO/A78L/v+XBY8AdwP3AncD9wIPAI/Y/UETeNzdDwP3N4F/NP/6/Gz6/Gz6/Gz6/Gz6/Gz6/Gz6/Gz6/Gz6/DbeM4/NqhesasCqBqxasKoBqxqwqgGrGrCqAasa8Of03u3A/cD9wAPA6u6PAasasKoBqxqwasDq3zLgLuDuXG7g3lzNf0D/f/re9b1/XN/7p7W9f27VPeB+6wGvAe8CrwHvdPcC8BrwGvAu8BrwPvA+8D7wPvB+9n7Oa/WAnXpA6wGtB7Qe0HpA6wGtB7Qe0HpA6wGtB6xqQNv+M/DZZuBvYAZmYGZfD7gLmIGZfT3gbmAGZuY+X7wO8fK9iJeX70W8vHwv4uXlexEvL9+LeHn5XpMebFUPWNWAVQ1Y1YBVDVjVgFUNWNWAVQ1Y1YBVDXjF9z8OfA58vhn4HJiBmX09YCwwA9Uv9/pPZf2gsh5U1g8q60Fl/aCyHlTWDyrrQWX9oLLZsh5gPQDWA2A9ANYDYD0A1gNgPQDWA2A9ANYDsO8uYAn4CvgK+OruK+CrgNl9PWASMAt8FXgV8CrwVcCv9p+BX9p/A7NlPYD1AFgPgPUAWA+A9QBYD4D1AFgPgPUAWA/AnmXg82XgcwMzMDNbe8D1wMzM1h5wPTAzszX4b/uVwFfAV/bVv6//WdfX/6zr63/W9fU/6/r6n3V9/c+6vub9XvWAVQ1Y1YBVDVjVgFUNWNWAVQ1Y1YBVDVjVgK/vXgC+6gWwF4CvwF77V9p/BfYisAisAisCq8AqsAqsAqsAqsAqsAqsAqsAqy0PHgbWwFrY2fL/gNWy9wFr9Z0wFsYisAisAisCq8AqsAqsAqsAqsAqsAqsAqvAatvCbgfW7F+x/wrsB9b/P2DVA1Y9YNUDVn8BhY6oQ3n0XlMAAAAASUVORK5CYII=');
+            background-size: cover;
+            background-position: center;
+            border: 1px solid #262626;
+        }
+        .profile-info {
+            width: 70%;
+        }
+        .username-row {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .username {
+            font-size: 20px;
+            font-weight: 300;
+            margin-right: 20px;
+        }
+        .btn-follow {
+            background-color: #0095f6;
+            color: white;
+            border: none;
+            padding: 7px 16px;
+            font-weight: 600;
+            font-size: 14px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .stats-row {
+            display: flex;
+            margin-bottom: 20px;
+            list-style: none;
+        }
+        .stats-row li {
+            margin-right: 40px;
+            font-size: 16px;
+        }
+        .stats-row span {
+            font-weight: 600;
+        }
+        .bio-row {
+            font-size: 16px;
+            line-height: 24px;
+        }
+        .bio-title {
+            font-weight: 600;
+        }
+        .bio-link {
+            color: #e0f1ff;
+            text-decoration: none;
+            font-weight: 600;
+            display: block;
+            margin-top: 5px;
+        }
+        .tabs {
+            display: flex;
+            justify-content: center;
+            border-top: 1px solid #262626;
+            margin-bottom: 12px;
+        }
+        .tab-item {
+            padding: 12px 0;
+            margin-right: 60px;
+            font-size: 12px;
+            font-weight: 600;
+            letter-spacing: 1px;
+            color: #8e8e8e;
+            text-transform: uppercase;
+            border-top: 1px solid transparent;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+        }
+        .tab-item.active {
+            color: #f5f5f5;
+            border-top: 1px solid #f5f5f5;
+            margin-top: -1px;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 28px;
+            padding-bottom: 50px;
+        }
+        .grid-item {
+            background-color: #121212;
+            aspect-ratio: 1 / 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            cursor: pointer;
+            border: 1px solid #262626;
+        }
+        .grid-item-placeholder {
+            color: #262626;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="profile-pic-container">
+                <div class="profile-pic"></div>
+            </div>
+            <div class="profile-info">
+                <div class="username-row">
+                    <h2 class="username">opaline.store</h2>
+                    <button class="btn-follow">Seguir</button>
+                </div>
+                <ul class="stats-row">
+                    <li><span>3</span> publicações</li>
+                    <li><span>1.250</span> seguidores</li>
+                    <li><span>180</span> seguindo</li>
+                </ul>
+                <div class="bio-row">
+                    <span class="bio-title">Opaline | Beauty & Care</span>
+                    <p>Realçando sua beleza essencial ✨</p>
+                    <p>Cuidados e autocuidado premium 💜</p>
+                    <a href="#" class="bio-link">wa.me/5514994691945</a>
+                </div>
+            </div>
+        </header>
+
+        <div class="tabs">
+            <div class="tab-item active">
+                <svg style="margin-right: 6px;" color="#f5f5f5" fill="#f5f5f5" height="12" role="img" viewBox="0 0 24 24" width="12"><rect fill="none" height="18" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" width="18" x="3" y="3"></rect><line fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" x1="9" x2="9" y1="3" y2="21"></line><line fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" x1="15" x2="15" y1="3" y2="21"></line><line fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" x1="3" x2="21" y1="9" y2="9"></line><line fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" x1="3" x2="21" y1="15" y2="15"></line></svg>
+                Publicações
+            </div>
+            <div class="tab-item">Reels</div>
+            <div class="tab-item">Marcados</div>
+        </div>
+
+        <div class="grid">
+            <div class="grid-item"> <img src="~/insta-sim-img1.jpg" /> </div>
+            <div class="grid-item"> <img src="~/insta-sim-img2.jpg" /></div>
+            <div class="grid-item"> <img src="~/insta-sim-img3.jpg" /> </div>
+        </div>
+    </div>
+</body>
+</html>
